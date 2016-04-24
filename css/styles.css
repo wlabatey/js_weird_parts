@@ -1,3 +1,26 @@
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .textCenter {
 	text-align: center !important;
+}
+
+.rowPadding {
+	padding: 10px 0;
+}
+
+.borderBottom {
+	border-bottom: solid 1px #ddd;
+}
+
+p.main {
+	font-size: 18px;
+	color: #333;
+}
+
+.post {
+	border-top: dotted 1px #ddd;
+	// border-bottom: dotted 1px #ddd;
 }
