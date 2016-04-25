@@ -8,7 +8,6 @@ window.onload = function (){
 	setTimeout(function(){
 		var t = performance.timing;
 		var pageLoadTime = (t.loadEventEnd - t.responseEnd)/1000;
-		console.log(pageLoadTime);
 		document.getElementById("timing").textContent = pageLoadTime;
 		}, 0);
 

@@ -12,7 +12,7 @@
 }
 
 .borderBottom {
-	border-bottom: solid 1px #ddd;
+	border-bottom: solid 5px #ddd;
 }
 
 p.main {
@@ -23,4 +23,8 @@ p.main {
 .post {
 	border-top: dotted 1px #ddd;
 	// border-bottom: dotted 1px #ddd;
+}
+
+.post > p {
+	font-size: 16px;
 }
