@@ -1,4 +1,4 @@
-var person = { 
+var Tony = { 
 	firstname: 'Tony',
 	lastname: 'Alicea',
 	address: {
@@ -8,4 +8,19 @@ var person = {
 	}
 };
 
-console.log(person);
+function greet(person) {
+	console.log('Hi ' + person.firstname);
+}
+
+greet(Tony);
+
+greet({
+	firstname: 'Mary',
+	lastname: 'Doe'
+});
+
+Tony.address2 = {
+	street: '333 Second St.'
+};
+
+console.log(Tony);
