@@ -13,3 +13,9 @@ function makeGreeting(language) {
 	};
 
 }
+
+var greetEnglish = makeGreeting('en');
+var greetSpanish = makeGreeting('es');
+
+greetEnglish('Will', 'Batey');
+greetSpanish('Will', 'Batey');
