@@ -46,3 +46,6 @@ console.log(arr5);
 
 // Do your best to make sure that your functions do not mutate data. 
 // Use new variables or arrays to store new data.
+
+var arr6 = _.map(arr1, function(item) { return item * 3; });
+console.log(arr6);
