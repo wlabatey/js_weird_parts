@@ -9,11 +9,10 @@ console.log(a);
 console.log(b);
 
 // by reference (all objects, including functions)
-var c = { greeting: 'hi'};
+var c = { greeting: 'hi' };
 var d;
 
 d = c;
-
 d.greeting = "hello"; // mutate
 
 console.log(c);
