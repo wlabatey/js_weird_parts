@@ -22,7 +22,7 @@ p.main {
 
 .post {
 	border-top: dotted 1px #ddd;
-	// border-bottom: dotted 1px #ddd;
+	border-bottom: dotted 1px #ddd;
 }
 
 .post > p {
