@@ -1,6 +1,11 @@
 # Javascript: Understanding the weird parts
 ### by Anthony Alicea
 
+
+#### 25/09/2016
+
+Resumed the course from the beginning, after a few months focusing on Wordpress. Time to get javascript down!
+
 #### 24/04/2016
 
 This repo tracks my progress through this great course.
