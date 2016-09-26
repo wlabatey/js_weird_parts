@@ -14,8 +14,10 @@ function b() {
 
 }
 
-/* In Javascript, when you define variables outside of 
+/* When you run Javascript, an execution context is created.
 
-    a function (in the global execution context) they get attached to the global object.
+	At the base level, when you define variables outside of a function (in the global execution context) 
+
+	they get attached to the global object.
 
 */
