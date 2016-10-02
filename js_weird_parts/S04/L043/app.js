@@ -10,7 +10,12 @@ var
 	language;
 
 var person = {
+	// the first name
 	firstname: 'John',
+
+
+	// the last name
+	// (always required)
 	lastname: 'Doe'	
 };
 
