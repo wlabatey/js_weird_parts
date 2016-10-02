@@ -23,7 +23,19 @@ console.log(d);
 
 // by reference (even as parameters)
 
+function changeGreeting(obj) {
+	obj.greeting='Hola'; // mutate
+}
 
+changeGreeting(d);
+console.log(c);
+console.log(d);
+
+// equals operator sets up new memory space (new address)
+
+c = { greeting: 'howdy' }; 	// in this instance, c is set to a new value which will cause the = operator to create a new memory space 
+console.log(c);				// and will point to a different space in memory than d 
+console.log(d);
 
 /*
 
