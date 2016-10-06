@@ -5,8 +5,8 @@ var person = {
 	lastname: 'Doe',
 	getFullName: function() {
 
-		var fullname = this.firstname + ' ' + this.lastname;
-		return fullname;
+		var fullname = this.firstname + ' ' + this.lastname;		// Remeber that in an object,
+		return fullname;											// 'this' refers to the current object.
 
 	}
 };
@@ -19,21 +19,18 @@ var logName = function(lang1, lang2) {
 
 }; // .bind(person);
 
+var logPersonName = logName.bind(person);
+
 // ---------------------------------------------
 
 // ---- bind -----
 
-// What we are doing below is using the .bind method. What this method does is returns a new copy of 
+// What we are doing above is using the .bind method. What this method does is returns a new copy of 
 // the original function and sets up a new function object.
 
-// This controls what the 'this' keyword refers to, rather than using the default.
+// It controls what the 'this' keyword refers to, rather than using the default.
 
-// We can either make a new variable and apply it as below, or we can use it as above.
-
-var logPersonName = logName.bind(person);
-
-logPersonName('en');
-// logName();
+// We can either make a new variable or use it at the end of the function as on line 20.
 
 // -----------------------------------------------
 
