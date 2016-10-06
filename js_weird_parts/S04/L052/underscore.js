@@ -168,7 +168,7 @@
         length = (keys || obj).length,
         results = Array(length);
     for (var index = 0; index < length; index++) {
-      var currentKey = keys ? keys[index] : index;
+      var currentKey = keys ? keys[index] : index; 
       results[index] = iteratee(obj[currentKey], currentKey, obj);
     }
     return results;
