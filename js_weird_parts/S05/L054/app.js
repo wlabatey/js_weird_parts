@@ -31,3 +31,28 @@ jane.__proto__ = person;
 
 console.log(jane.getFullName()); // Jane Default
 console.log(jane.lastname); // Default
+
+// Reflection & Extend
+
+for (var prop in john) {
+	if (john.hasOwnProperty(prop)) { 			// We use the .hasOwnProperty to only check the members 
+		console.log(prop + ': ' + john[prop]); 	// of the john object, but not it's prototype.
+	}
+}
+
+var jane = {
+	address: '111 Main St.',
+	getFormalFullName: function() {
+		return this.lastname + ', ' + this.firstname;
+	}
+};
+
+var jim = {
+	getFirstName: function() {
+		return firstname;
+	}
+}
+
+_.extend(john, jane, jim);
+
+console.log(john);
