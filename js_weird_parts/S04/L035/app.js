@@ -20,6 +20,19 @@ log(function() {
 	console.log("hi");
 });
 
+log(function() {
+	a = { 
+		message: 'hi',
+		second: {
+			message: 'hello',
+			third: {
+				message: 'hola'
+			}
+		} 
+	};
+	console.log(a.second.third.message);
+});
+
 /*
 
 Expression:
@@ -30,5 +43,7 @@ A unit of code that just does work but dosn't return a value, e.g. an if stateme
 
 In JavaScript we have function expressions and function statements.
 
+Javascript is a functional programming languages, with first class functions. Functions
+can be passed around like variables or objects.
 
 */
