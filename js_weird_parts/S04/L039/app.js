@@ -28,6 +28,6 @@ greet('John', 'Doe', 'es', 'stuff1', 'stuff2');
 
 We can use this to check what has been passed to the function and check the length.
 
-In ES6, we can use '...theRest' rest parameter to represent an indefinite number of arguments as an array. 
+In ES6, we can use '...theRest' spread parameter to represent an indefinite number of arguments as an array. 
 
 */
