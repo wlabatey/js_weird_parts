@@ -18,7 +18,7 @@ console.log('------------');
 
 var greeting = function(name) { 	// Using an Immediately Invoked Function Express (IIFE)
 
-	return 'Hello ' + name;
+	return('Hello ' + name);
 
 }('Joe'); 		// we invoke it immediately by using the parenthesis at the end of it, and pass it the name argument 'Joe'.
 
