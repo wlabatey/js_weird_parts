@@ -17,9 +17,13 @@ var logName = function(lang1, lang2) {
 	console.log('Arguments: ' + lang1 + ' ' + lang2);
 	console.log('-----------------');
 
-}; // .bind(person);
+}.bind(person);
 
-var logPersonName = logName.bind(person);
+// var logPersonName = logName.bind(person);
+
+//logPersonName('en', 'es');
+
+logName('en', 'es');
 
 // ---------------------------------------------
 
