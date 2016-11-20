@@ -22,16 +22,17 @@ fs[2]();
 
 console.log('----------');
 
+console.log(fs);
+
+console.log('----------');
+
 /*
 
 In this example, the result of our 3 function calls on lines 19-21 are all 3.
 
 This is again due to closures.
 
-What happens is that buildFunctions() creates the array 'arr' and pushes the function on lines 8-10 to it, three times.
-
-The annonymous function it is pushing references variable i. Note that variable i is defined in the for loop inside of 
-buildFunctions() and is incremented by 1 each time the loop is run. 
+What happens is that buildFunctions() creates the array 'arr' and pushes the function objec on lines 8-10 to it, three times.
 
 The array is returned and then assigned to the variable fs on line 17.
 
@@ -67,6 +68,11 @@ fs2[2]();
 
 console.log('----------');
 
+console.log(fs2);
+
+console.log('----------');
+
+
 function buildFunctions3() {
 
 	var arr = [];
@@ -93,3 +99,6 @@ fs3[2]();
 
 console.log('----------');
 
+console.log(fs3);
+
+console.log('----------');
