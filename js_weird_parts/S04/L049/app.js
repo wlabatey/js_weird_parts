@@ -22,7 +22,7 @@ sayHiLater();
 
 // jQuery uses function expressions and first-class functions!
 
-// The click function excepts another function which we pass it, which is then executed.
+// The click function accepts another function which we pass it, which is then executed.
 
 // $("button").click(function(){
 
@@ -38,6 +38,6 @@ function tellMeWhenDone(callback) {
 
 tellMeWhenDone(function() {
 
-	console.log('All done...');
+	console.log('I am also done.');
 
 });
