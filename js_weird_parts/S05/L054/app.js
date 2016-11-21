@@ -16,7 +16,11 @@ var john = {
 
 john.__proto__ = person;
 
-console.log(john.getFullName()); // John Doe
+console.log(john);
+
+// console.log(person.getFullName.call(john)); // John Doe
+
+console.log(john.getFullName());
 console.log(john.firstname);
 
 // Whichever object originated the call will be what is referenced to by 'this'.
@@ -51,8 +55,10 @@ var jim = {
 	getFirstName: function() {
 		return firstname;
 	}
-}
+};
 
 _.extend(john, jane, jim);
+
+console.log(_.allKeys(john));
 
 console.log(john);
