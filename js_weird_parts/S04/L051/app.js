@@ -41,7 +41,12 @@ var checkPastLimit = function(limiter, item) {
 	return item > limiter;
 };
 
-var arr4 = mapForEach(arr1, checkPastLimit.bind(this, 1));
+var checkPastLimitOfOne = checkPastLimit.bind(this, 1);
+
+// console.log(checkPastLimit);
+// console.log(checkPastLimitOfOne);
+
+var arr4 = mapForEach(arr1, checkPastLimitOfOne);
 
 console.log(arr4);
 
@@ -62,13 +67,17 @@ As demonstrated below, we can simplify this even further to avoid having to cons
 // -----------------------------------------------
 
 
-function checkPastLimiter(limiter) {
+var checkPastLimitSimplified = function(limiter) {
+	
 	return function(item) {
+
 		return item > limiter;
 	};
-}
+};
 
-var arr5 = mapForEach(arr1, checkPastLimiter(1)); //checkPastLimiter(2)); 
+// console.log(checkPastLimiter);
+
+var arr5 = mapForEach(arr1, checkPastLimitSimplified(1)); //checkPastLimiter(2)); 
 
 console.log(arr5);
 
