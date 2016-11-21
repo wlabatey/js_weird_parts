@@ -18,13 +18,13 @@ Person.prototype.sayHello = function() {			// Methods are added to the function 
 var john = new Person('john', 'doe');
 console.log(john);
 
-var jane = new Person('jane', 'dougal');
-console.log(jane);
-
-console.log(john.sayHello());
-console.log(jane.sayHello());
-
-Person.prototype.getFullName = function() {
+var jane = new Person('jane', 'dougal');			// Beware of using the 'new' keyword and constructor functions.
+console.log(jane);									// You may need to deal with them in legacy codebases,
+													// but there are better ways to create objects. 
+console.log(john.sayHello());						
+console.log(jane.sayHello());						// If you forget to use the 'new' keyword, 'this' will be bound to
+													// the global object in the function call and will crash into
+Person.prototype.getFullName = function() {			// global variables / the global namespace!
 	return "My full name is " + this.firstname + " " + this.lastname;
 };
 
