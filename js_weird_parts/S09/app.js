@@ -1,4 +1,4 @@
-(function() {
+;(function() {
 
 	var me = G$('Will', 'Batey');
 
@@ -26,3 +26,4 @@
 	}, false);
 
 })();
+
